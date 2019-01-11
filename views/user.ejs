@@ -5,14 +5,38 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    
-    <p><%= body.login %></p>
-    <p><%= body.id %></p>
-    <p><%= body.company %></p>
-    <p><%= body.location %></p>
-    <p><%= body.followers %></p>
-    <p><%= body.following %></p>
-    <p><%= body.email %></p>
+    <h1>User Profile</h1>
+    <table>
+    	<tr>
+    		<th>Username</th>
+    		<td><%= body.login %></td>
+    	</tr>
+    	<tr>
+    		<th>Userid</th>
+    		<td><%= body.id %></td>
+    	</tr>
+    	<tr>
+    		<th>Company</th>
+    		<td><%= body.company %></td>
+    	</tr>
+    	<tr>
+    		<th>Location</th>
+    		<td><%= body.location %></td>
+    	</tr>
+    	<tr>
+    		<th>Followers</th>
+    		<td><%= body.followers %></td>
+    	</tr>
+    	<tr>
+    		<th>following</th>
+    		<td><%= body.following %></td>
+    	</tr>
+    	<tr>
+    		<th>Email</th>
+    		<td><%= body.email %></td>
+    	</tr>
+    	
+    </table>
    
   </body>
 </html>
