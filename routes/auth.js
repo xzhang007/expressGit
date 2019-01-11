@@ -13,17 +13,16 @@ router.post('/', function(request, response) {
 
 	client.get('/user', {}, function(err, status, body, headers) {
 		//console.log(body);
-		response.render('user', {body: body
-				//username: body.login},
-				//{userid: body.id
-				//company: body.compay,
-				//location: body.location,
-				//followers: body.followers,
-				//following: body.following,
-				//email: email
-			});
+		if (err) {
+			console.log(err);
+			//response.redirect('/');
+			//response.render('index', { title: 'GitHub Login' });
+			response.status(200).send("no matched username and password in github.");
+		} else {
+		response.render('user', {body: body});
+		}	
 	})
-	//response.render('auth', {username: request.body.username, password: request.body.password});
+	
 	
 })
 
