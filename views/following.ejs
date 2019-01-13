@@ -6,7 +6,20 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <p><%= data %></p>
-    
+  	<h1>Following</h1>
+  	<table>
+  		<% for (var i = 0; i < data.length; i++) { %>
+  		<tr>
+  			<th>User Name: </th>
+  			<td><%= data[i].login %></td>
+  		</tr>
+  		<tr>
+  			<th>User Id: </th>
+  			<td><%= data[i].id %></td>
+  		</tr>
+  		<tr>
+  		</tr>
+  		<% } %>
+  	</table>
   </body>
 </html>

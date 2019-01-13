@@ -35,8 +35,16 @@
     		<th>Email</th>
     		<td><%= body.email %></td>
     	</tr>
+
     </table>
-   <a href="/repo" class="button", value=<%= body.repos_url %>>Repo</a><br>
-   <a href="/following" class="button", value=<%= body.following_url %>>Following</a>
+    <form action="repo" method="post">
+        <input type="hidden"  name="repos_url" value="<%= body.repos_url %>" /> 
+        <input type='submit' value='repo'>
+    </form>
+   <br>
+   <form action="following" method="post">
+        <input type="hidden"  name="following_url" value="<%= body.following_url %>" /> 
+        <input type='submit' value='following'>
+    </form>
   </body>
 </html>

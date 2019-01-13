@@ -10,8 +10,10 @@
     "debug": "~2.6.9",
     "ejs": "~2.5.7",
     "express": "~4.16.0",
+    "get-json": "^1.0.1",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
-    "octonode": "^0.9.5"
+    "octonode": "^0.9.5",
+    "unirest": "^0.5.1"
   }
 }
